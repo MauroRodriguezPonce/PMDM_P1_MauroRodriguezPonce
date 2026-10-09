@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Título de pantalla  -->
+    <style name="EstiloTitulo">
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+    </style>
+    <!--  Título dentro de una tarjeta  -->
+    <style name="EstiloSubtitulo">
+        <item name="android:textSize">@dimen/texto_subtitulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+    </style>
+    <!--  Texto secundario / etiquetas  -->
+    <style name="EstiloEtiqueta">
+        <item name="android:textSize">@dimen/texto_etiqueta</item>
+        <item name="android:textColor">@color/color_texto_secundario</item>
+    </style>
+    <!--  Botón principal  -->
+    <style name="EstiloBoton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/altura_minima_toque</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <!--  Botón secundario (contorno)  -->
+    <style name="EstiloBotonSecundario" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/altura_minima_toque</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <!--  Tarjeta de título  -->
+    <style name="EstiloTarjeta" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/color_superficie</item>
+        <item name="cardCornerRadius">@dimen/radio_tarjeta</item>
+    </style>
+    <!--  Chip de filtro  -->
+    <style name="EstiloFiltro" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textSize">@dimen/texto_etiqueta</item>
+    </style>
+</resources>

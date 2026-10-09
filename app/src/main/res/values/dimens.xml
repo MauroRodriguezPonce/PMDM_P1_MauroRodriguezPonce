@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Márgenes y tamaños (dp)  -->
+    <dimen name="margen_pequeno">8dp</dimen>
+    <dimen name="margen_pantalla">16dp</dimen>
+    <dimen name="margen_grande">24dp</dimen>
+    <dimen name="altura_minima_toque">48dp</dimen>
+    <dimen name="altura_banner">120dp</dimen>
+    <dimen name="tamano_logo">40dp</dimen>
+    <dimen name="tamano_icono_estrella">24dp</dimen>
+    <dimen name="radio_tarjeta">12dp</dimen>
+    <!--  Tamaños de texto (sp)  -->
+    <dimen name="texto_titulo">26sp</dimen>
+    <dimen name="texto_subtitulo">18sp</dimen>
+    <dimen name="texto_cuerpo">16sp</dimen>
+    <dimen name="texto_etiqueta">14sp</dimen>
+</resources>
