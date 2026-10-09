@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PelisPendientes</string>
+
+    <!-- Main screen -->
+    <string name="titulo_principal">My watchlist</string>
+    <string name="resumen_titulos">You have %1$d titles to watch and %2$d watched</string>
+    <string name="filtro_todas">All</string>
+    <string name="filtro_pendientes">To watch</string>
+    <string name="filtro_vistas">Watched</string>
+    <string name="boton_anadir">Add title</string>
+    <string name="estado_pendiente">To watch</string>
+    <string name="estado_visto">Watched</string>
+    <string name="ejemplo_titulo_1">Dune: Part Two</string>
+    <string name="ejemplo_detalle_1">Movie · Max</string>
+    <string name="ejemplo_titulo_2">Squid Game</string>
+    <string name="ejemplo_detalle_2">Series · Netflix</string>
+
+    <!-- Form -->
+    <string name="titulo_formulario">Add title</string>
+    <string name="hint_nombre">Name of the movie or series</string>
+    <string name="etiqueta_tipo">Type</string>
+    <string name="tipo_pelicula">Movie</string>
+    <string name="tipo_serie">Series</string>
+    <string name="etiqueta_plataforma">Platform</string>
+    <string name="etiqueta_nota">Your rating</string>
+    <string name="boton_guardar">Save</string>
+    <string name="boton_cancelar">Cancel</string>
+
+    <!-- Image descriptions (accessibility) -->
+    <string name="desc_banner">Illustration with film reels and a film strip</string>
+    <string name="desc_logo">PelisPendientes logo: a clapperboard</string>
+    <string name="desc_estrella">Rating star</string>
+
+    <!-- Platform list -->
+    <string-array name="plataformas">
+        <item>Netflix</item>
+        <item>Prime Video</item>
+        <item>Disney+</item>
+        <item>Max</item>
+        <item>Filmin</item>
+        <item>Other</item>
+    </string-array>
+</resources>
