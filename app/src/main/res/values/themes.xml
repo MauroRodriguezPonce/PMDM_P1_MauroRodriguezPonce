@@ -1,9 +1,17 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PMDM_P1_MauroRodriguezPonce" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!--  Tema de la app: oscuro, con la paleta de colors.xml  -->
+    <style name="Theme.PelisPendientes" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/color_primario</item>
+        <item name="colorOnPrimary">@color/color_sobre_primario</item>
+        <item name="colorPrimaryContainer">@color/color_primario_oscuro</item>
+        <item name="colorSecondary">@color/color_acento</item>
+        <item name="colorOnSecondary">@color/color_fondo</item>
+        <item name="colorSurface">@color/color_superficie</item>
+        <item name="colorOnSurface">@color/color_texto_principal</item>
+        <item name="colorOnBackground">@color/color_texto_principal</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="android:colorBackground">@color/color_fondo</item>
+        <item name="android:statusBarColor">@color/color_fondo</item>
+        <item name="android:navigationBarColor">@color/color_fondo</item>
     </style>
-
-    <style name="Theme.PMDM_P1_MauroRodriguezPonce" parent="Base.Theme.PMDM_P1_MauroRodriguezPonce" />
 </resources>
