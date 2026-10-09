@@ -1,24 +1,26 @@
-package es.medac.maurorodriguezponce.app;
+package es.medac.maurorodriguezponce.app; //
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        // Texto con parámetros (%1$d y %2$d): 2 pendientes y 1 visto
+        TextView resumen = findViewById(R.id.texto_resumen);
+        resumen.setText(getString(R.string.resumen_titulos, 2, 1));
+
+        // Abre la segunda pantalla (solo interfaz, sin lógica)
+        Button anadir = findViewById(R.id.boton_anadir);
+        anadir.setOnClickListener(v ->
+                startActivity(new Intent(this, FormularioActivity.class)));
     }
 }

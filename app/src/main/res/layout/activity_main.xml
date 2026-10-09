@@ -1,19 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" android:orientation="vertical" tools:context=".MainActivity">
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/altura_banner" android:contentDescription="@string/desc_banner" android:scaleType="centerCrop" android:src="@drawable/banner_cine"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/margen_pantalla">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                                <ImageView android:layout_width="@dimen/tamano_logo" android:layout_height="@dimen/tamano_logo" android:contentDescription="@string/desc_logo" android:src="@drawable/ic_claqueta"/>
+                                <TextView style="@style/EstiloTitulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margen_pequeno" android:text="@string/titulo_principal"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/texto_resumen" style="@style/EstiloEtiqueta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pequeno"/>
+                        <com.google.android.material.chip.ChipGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pequeno" app:selectionRequired="true" app:singleSelection="true">
+                                <com.google.android.material.chip.Chip style="@style/EstiloFiltro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/filtro_todas"/>
+                                <com.google.android.material.chip.Chip style="@style/EstiloFiltro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filtro_pendientes"/>
+                                <com.google.android.material.chip.Chip style="@style/EstiloFiltro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filtro_vistas"/>
+                        </com.google.android.material.chip.ChipGroup>
+                        <!--  Tarjeta 1: título pendiente  -->
+                        <com.google.android.material.card.MaterialCardView style="@style/EstiloTarjeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pantalla">
+                                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/margen_pantalla">
+                                        <TextView style="@style/EstiloSubtitulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ejemplo_titulo_1"/>
+                                        <TextView style="@style/EstiloEtiqueta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ejemplo_detalle_1"/>
+                                        <TextView style="@style/EstiloEtiqueta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pequeno" android:text="@string/estado_pendiente" android:textColor="@color/color_estado_pendiente" android:textStyle="bold"/>
+                                </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <!--  Tarjeta 2: título visto con nota  -->
+                        <com.google.android.material.card.MaterialCardView style="@style/EstiloTarjeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pantalla">
+                                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/margen_pantalla">
+                                        <TextView style="@style/EstiloSubtitulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ejemplo_titulo_2"/>
+                                        <TextView style="@style/EstiloEtiqueta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ejemplo_detalle_2"/>
+                                        <TextView style="@style/EstiloEtiqueta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pequeno" android:text="@string/estado_visto" android:textColor="@color/color_estado_visto" android:textStyle="bold"/>
+                                        <RatingBar style="?android:attr/ratingBarStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_pequeno" android:isIndicator="true" android:numStars="5" android:progressBackgroundTint="@color/color_texto_secundario" android:progressTint="@color/color_acento" android:rating="4" android:stepSize="1"/>
+                                </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+        </ScrollView>
+        <com.google.android.material.button.MaterialButton android:id="@+id/boton_anadir" style="@style/EstiloBoton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margen_pantalla" android:text="@string/boton_anadir" app:icon="@drawable/ic_anadir"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Cuerpo -->
+    <path
+        android:fillColor="@color/color_primario"
+        android:pathData="M6,22H42V40A2,2 0 0 1 40,42H8A2,2 0 0 1 6,40Z" />
+    <!-- Parte superior (la "tapa" de la claqueta) -->
+    <path
+        android:fillColor="@color/color_acento"
+        android:pathData="M5,13L39.5,6L41,14L6.5,21Z" />
+    <!-- Franjas -->
+    <path
+        android:fillColor="@color/color_fondo"
+        android:pathData="M11,12.2L16,11.2L14.6,19.4L9.6,20.4Z" />
+    <path
+        android:fillColor="@color/color_fondo"
+        android:pathData="M21,10.2L26,9.2L24.6,17.4L19.6,18.4Z" />
+    <path
+        android:fillColor="@color/color_fondo"
+        android:pathData="M31,8.2L36,7.2L34.6,15.4L29.6,16.4Z" />
+    <!-- Símbolo de reproducir -->
+    <path
+        android:fillColor="@color/color_texto_principal"
+        android:pathData="M20,27L20,37L30,32Z" />
+</vector>
