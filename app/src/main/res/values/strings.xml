@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">PMDM_P1_MauroRodriguezPonce</string>
+    <string name="app_name">PelisPendientes</string>
+    <!--  Pantalla principal  -->
+    <string name="titulo_principal">Mis pendientes</string>
+    <string name="resumen_titulos">Tienes %1$d títulos pendientes y %2$d vistos</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="filtro_pendientes">Pendientes</string>
+    <string name="filtro_vistas">Vistas</string>
+    <string name="boton_anadir">Añadir título</string>
+    <string name="estado_pendiente">Pendiente</string>
+    <string name="estado_visto">Vista</string>
+    <string name="ejemplo_titulo_1">Dune: Parte dos</string>
+    <string name="ejemplo_detalle_1">Película · Max</string>
+    <string name="ejemplo_titulo_2">El juego del calamar</string>
+    <string name="ejemplo_detalle_2">Serie · Netflix</string>
+    <!--  Formulario  -->
+    <string name="titulo_formulario">Añadir título</string>
+    <string name="hint_nombre">Nombre de la película o serie</string>
+    <string name="etiqueta_tipo">Tipo</string>
+    <string name="tipo_pelicula">Película</string>
+    <string name="tipo_serie">Serie</string>
+    <string name="etiqueta_plataforma">Plataforma</string>
+    <string name="etiqueta_nota">Tu nota</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <!--  Descripciones de imágenes (accesibilidad)  -->
+    <string name="desc_banner">Ilustración con carretes y tira de película</string>
+    <string name="desc_logo">Logotipo de PelisPendientes: una claqueta</string>
+    <string name="desc_estrella">Estrella de valoración</string>
+    <!--  Lista de plataformas  -->
+    <string-array name="plataformas">
+        <item>Netflix</item>
+        <item>Prime Video</item>
+        <item>Disney+</item>
+        <item>Max</item>
+        <item>Filmin</item>
+        <item>Otra</item>
+    </string-array>
 </resources>
