@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!--  Marca: rojo butaca de cine  -->
+    <color name="color_primario">#C62828</color>
+    <color name="color_primario_oscuro">#8E0000</color>
+    <color name="color_sobre_primario">#FFFFFF</color>
+    <!--  Acento: dorado de las estrellas / premios  -->
+    <color name="color_acento">#FFC107</color>
+    <!--  Superficies: sala a oscuras  -->
+    <color name="color_fondo">#14121A</color>
+    <color name="color_superficie">#221F2E</color>
+    <!--  Texto  -->
+    <color name="color_texto_principal">#F5F5F7</color>
+    <color name="color_texto_secundario">#B3B3BD</color>
+    <!--  Estados semánticos  -->
+    <color name="color_estado_pendiente">#FFA726</color>
+    <color name="color_estado_visto">#66BB6A</color>
+    <color name="color_error">#EF5350</color>
 </resources>
